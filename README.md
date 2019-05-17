@@ -1,5 +1,5 @@
 # CS50WorldTime
-CS50 Final Project
+CS50 Final Project / Source available on Github @ https://github.com/JCInteractive/CS50WorldTime
 
 This is CS50WorldTime! An interactive time tracking tool that lets you track local times around the globe and plan your trips accordingly!
 To get started you will need to download Visual Studio. You can download the free community version here: https://visualstudio.microsoft.com/downloads/
