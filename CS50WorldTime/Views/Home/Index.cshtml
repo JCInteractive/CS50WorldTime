@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+    <body onload="start()">
+        <div class="jumbotron">
+            <h1>Welcome to CS50 World Time!</h1>
+            <h3>Your current time zone is: <partial>@ViewBag.timezone</partial></h3>
+            <h3>Your current time is: <partial id="time"></partial></h3>
+            
+        </div>
+    </body>
+
+    <script>
+        function start() {
+            // Create new Date object and parse hours, minutes, seconds and refresh
+            var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+            m = check(m);
+            s = check(s);
+            // Get time field and change inner HTML
+            document.getElementById('time').innerHTML =
+                h + ":" + m + ":" + s;
+            var t = setTimeout(start, 500);
+    }
+
+        function check(i) {
+            // Append 0 if the number is less than 10
+            if (i < 10) {
+                i = "0" + i
+            };  
+            return i;
+        }
+    </script>

@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+        
+<div class="jumbotron">
+    <h3>Check the Time Zone of any city!</h3>
+    <form>
+        <input type="text" placeholder="Name of City" id="city"/>
+        <br /><br />
+        <button class="btn btn-primary" onclick="getTime()">Submit</button>
+    </form>
+</div>
+
+<script>
+    function getTime() {
+        // Get the time and time zone of the entered city using the API 
+        // Get the user input of city and submit to API endpoint
+        var city = document.getElementById('city').value;
+        var timezone = "";// TODO 
+        alert("The timezone of "+city+" is: "+timezone);
+    }
+</script>
